@@ -17,6 +17,7 @@
       "configure" : {
          "requires" : {
             "Alien::Base" : "0.001",
+            "File::Which" : "0",
             "Module::Build" : "0.38"
          }
       },
@@ -31,7 +32,7 @@
    "provides" : {
       "Alien::LibXML" : {
          "file" : "lib/Alien/LibXML.pm",
-         "version" : "0.000_01"
+         "version" : "0.000_02"
       }
    },
    "release_status" : "testing",
@@ -40,5 +41,5 @@
          "http://www.opensource.org/licenses/mit-license.php"
       ]
    },
-   "version" : "0.000_01"
+   "version" : "0.000_02"
 }
