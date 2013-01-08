@@ -1,5 +1,5 @@
 ---
-abstract: 'just coz'
+abstract: 'install the C libxml2 library on your system'
 author:
   - 'Toby Inkster <tobyink@cpan.org>'
 build_requires: {}
@@ -17,11 +17,11 @@ name: Alien-LibXML
 provides:
   Alien::LibXML:
     file: lib/Alien/LibXML.pm
-    version: 0.000_02
+    version: 0.001
 requires:
   Alien::Base: 0
   File::ShareDir: 1.00
   perl: v5.8.9
 resources:
   license: http://www.opensource.org/licenses/mit-license.php
-version: 0.000_02
+version: 0.001

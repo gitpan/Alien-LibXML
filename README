@@ -1,9 +1,16 @@
 NAME
-    Alien::LibXML - just coz
+    Alien::LibXML - install the C libxml2 library on your system
+
+SYNOPSIS
+       use 5.010;
+       use strict;
+       use Alien::LibXML;
+   
+       my $alien = Alien::LibXML->new;
+       say $alien->libs;
+       say $alien->cflags;
 
 DESCRIPTION
-    This is a very early test version of Alien::LibXML.
-
     Hopefully at some point, XML::LibXML's installation scripts might use
     Alien::LibXML to locate or install the C libxml2 library.
 
@@ -11,7 +18,7 @@ AUTHOR
     Toby Inkster <tobyink@cpan.org>.
 
 COPYRIGHT, LICENCE AND DISCLAIMER OF WARRANTIES
-    Copyright (c) 2012 Toby Inkster.
+    Copyright (c) 2012-2013 Toby Inkster.
 
     Permission is hereby granted, free of charge, to any person obtaining a
     copy of this software and associated documentation files (the

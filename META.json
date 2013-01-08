@@ -1,5 +1,5 @@
 {
-   "abstract" : "just coz",
+   "abstract" : "install the C libxml2 library on your system",
    "author" : [
       "Toby Inkster <tobyink@cpan.org>"
    ],
@@ -32,14 +32,14 @@
    "provides" : {
       "Alien::LibXML" : {
          "file" : "lib/Alien/LibXML.pm",
-         "version" : "0.000_02"
+         "version" : "0.001"
       }
    },
-   "release_status" : "testing",
+   "release_status" : "stable",
    "resources" : {
       "license" : [
          "http://www.opensource.org/licenses/mit-license.php"
       ]
    },
-   "version" : "0.000_02"
+   "version" : "0.001"
 }
