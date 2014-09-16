@@ -16,3 +16,4 @@ MANIFEST			This list of files
 MANIFEST.SKIP                   That list of files
 META.yml
 META.json
+SIGNATURE    Added here by Module::Build
