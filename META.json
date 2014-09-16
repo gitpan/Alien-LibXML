@@ -4,7 +4,7 @@
       "Toby Inkster <tobyink@cpan.org>"
    ],
    "dynamic_config" : 1,
-   "generated_by" : "Module::Build version 0.4001, CPAN::Meta::Converter version 2.120921",
+   "generated_by" : "Module::Build version 0.4205",
    "license" : [
       "mit"
    ],
@@ -17,22 +17,26 @@
       "configure" : {
          "requires" : {
             "Alien::Base" : "0.001",
-            "File::Which" : "0",
             "Module::Build" : "0.38"
          }
       },
       "runtime" : {
          "requires" : {
-            "Alien::Base" : "0",
+            "Alien::Base" : "0.005",
             "File::ShareDir" : "1.00",
             "perl" : "v5.8.9"
+         }
+      },
+      "test" : {
+         "requires" : {
+            "File::Which" : "0"
          }
       }
    },
    "provides" : {
       "Alien::LibXML" : {
          "file" : "lib/Alien/LibXML.pm",
-         "version" : "0.001"
+         "version" : "0.002"
       }
    },
    "release_status" : "stable",
@@ -41,5 +45,5 @@
          "http://www.opensource.org/licenses/mit-license.php"
       ]
    },
-   "version" : "0.001"
+   "version" : "0.002"
 }

@@ -9,11 +9,13 @@ my $builder = Alien::Base::ModuleBuild->new(
 	configure_requires => {
 		'Alien::Base'   => '0.001',
 		'Module::Build' => '0.38',
-		'File::Which'   => 0,       # remove this for non-dev release
+	},
+	test_requires => {
+		'File::Which'   => 0,
 	},
 	requires => {
 		'perl'        => '5.8.9',
-		'Alien::Base' => '0',
+		'Alien::Base' => '0.005',
 	},
 	dist_author => 'Toby Inkster <tobyink@cpan.org>',
 	alien_name => 'libxml-2.0',
@@ -21,8 +23,13 @@ my $builder = Alien::Base::ModuleBuild->new(
 		protocol => 'ftp',
 		host     => 'xmlsoft.org',
 		location => 'libxml2/',
-		pattern  => qr/^libxml2-sources-([\d\.]+)\.tar\.gz$/,
+		pattern  => qr/^libxml2-([\d\.]+)\.tar\.gz$/,
 	},
+	alien_build_commands => [
+		'%c --prefix=%s --without-python --enable-shared --enable-static',
+		'make',
+	],
+	alien_isolate_dynamic => 1,
 );
 $builder->create_build_script;
 

@@ -2,26 +2,26 @@
 abstract: 'install the C libxml2 library on your system'
 author:
   - 'Toby Inkster <tobyink@cpan.org>'
-build_requires: {}
+build_requires:
+  File::Which: '0'
 configure_requires:
-  Alien::Base: 0.001
-  File::Which: 0
-  Module::Build: 0.38
+  Alien::Base: '0.001'
+  Module::Build: '0.38'
 dynamic_config: 1
-generated_by: 'Module::Build version 0.4001, CPAN::Meta::Converter version 2.120921'
+generated_by: 'Module::Build version 0.4205, CPAN::Meta::Converter version 2.140640'
 license: mit
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
-  version: 1.4
+  version: '1.4'
 name: Alien-LibXML
 provides:
   Alien::LibXML:
     file: lib/Alien/LibXML.pm
-    version: 0.001
+    version: '0.002'
 requires:
-  Alien::Base: 0
-  File::ShareDir: 1.00
+  Alien::Base: '0.005'
+  File::ShareDir: '1.00'
   perl: v5.8.9
 resources:
   license: http://www.opensource.org/licenses/mit-license.php
-version: 0.001
+version: '0.002'
